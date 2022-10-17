@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Google Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.google.com"/>
+    <classes>
+      <class name="testcases.GoogleTest">
+        <methods>
+          <include name="searchTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.GoogleTest -->
+    </classes>
+  </test> <!-- Google Test(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Suite] -->
